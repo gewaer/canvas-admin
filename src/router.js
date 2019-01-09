@@ -3,6 +3,8 @@ import Router from "vue-router";
 import Dashboard from "./views/dashboard";
 import Auth from "@/views/users/auth";
 import store from "@/store";
+import BrowseAppsList from "./views/apps-browse/";
+import AppDetails from "./views/app-details/";
 
 Vue.use(Router);
 
@@ -65,7 +67,23 @@ const router = new Router({
             meta: {
                 requiresAuth: false
             }
-        }
+        },
+        {
+            path: "/apps",
+            name: "apps-browse",
+            component: BrowseAppsList,
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/details",
+            name: "apps-details",
+            component: AppDetails,
+            meta: {
+                requiresAuth: true
+            }
+        },
     ]
 });
 
