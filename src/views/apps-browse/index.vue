@@ -101,8 +101,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -111,7 +116,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -129,8 +134,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -139,7 +149,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -157,8 +167,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -167,7 +182,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -185,8 +200,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -195,7 +215,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -213,8 +233,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -223,7 +248,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -241,8 +266,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -251,7 +281,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -269,8 +299,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -279,7 +314,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -297,8 +332,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -307,7 +347,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -325,8 +365,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -335,7 +380,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -353,8 +398,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -363,7 +413,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                             <tr>
@@ -381,8 +431,13 @@
                                 <td>Lorem Ipsum is simply dummy</td>
                                 <td>
                                     <div class="btn-group app-edit-btn">
-                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i> Edit</button>
-                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
+                                            data-toggle="dropdown" 
+                                            aria-haspopup="true" 
+                                            aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <div class="dropdown-menu">
@@ -391,7 +446,7 @@
                                             <a class="dropdown-item" href="#">Action 3</a>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="btn btn-danger m-l-5"><i class="fas fa-trash-alt"/></button>
                                 </td>
                             </tr>
                         </tbody>

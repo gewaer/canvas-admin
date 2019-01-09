@@ -38,8 +38,7 @@
         </div>
         <h4 class="section-title p-l-10">General setup</h4>
         <div class="card">
-            <div class="card-block">
-            </div>
+            <div class="card-block"/>
         </div>
     </div>
 </template>
