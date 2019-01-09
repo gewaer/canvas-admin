@@ -78,7 +78,7 @@ const router = new Router({
         },
         {
             path: "/app/:id/details",
-            name: "apps-details",
+            name: "app-details",
             component: AppDetails,
             meta: {
                 requiresAuth: true

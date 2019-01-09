@@ -15,10 +15,10 @@
                 <img src="/img/secondary-logo.png">
             </router-link>
             <div class="sidebar-header-controls">
-                <button 
-                    type="button" 
-                    class="btn btn-link d-lg-inline-block d-xlg-inline-block d-md-inline-block d-sm-none d-none" 
-                    data-toggle-pin="sidebar" 
+                <button
+                    type="button"
+                    class="btn btn-link d-lg-inline-block d-xlg-inline-block d-md-inline-block d-sm-none d-none"
+                    data-toggle-pin="sidebar"
                     @click="togglePinSidebar">
                     <i class="fa fs-12"/>
                 </button>
@@ -40,18 +40,22 @@
                     </span>
                 </li>
                 <li>
-                    <a id="browse-inventory-menu-link" href="#">
-                        <span class="title">Leads</span>
-                    </a>
+                    <router-link id="dashboard-menu-link" :to="{ name: 'apps-browse'}">
+                        <span class="title">Apps</span>
+                    </router-link>
                     <span class="icon-thumbnail">
-                        <i class="fas fa-users"/>
+                        <i class="fas fa-mobile-alt"></i>
                     </span>
-                    <!-- <ul class="dealer-sub-menu">
+                    <ul v-if="$route.name === 'apps-details'" class="sub-menu">
                         <li>
-                            <a id="view-vehicle-menu-link">Option 1</a>
-                            <span class="icon-thumbnail">V</span>
+                            <router-link :to="{ name: 'apps-browse'}">General Information</router-link>
+                            <span class="icon-thumbnail">G</span>
                         </li>
                         <li>
+                            <router-link :to="{ name: 'apps-browse'}">Subscriptions</router-link>
+                            <span class="icon-thumbnail">S</span>
+                        </li>
+                        <!-- <li>
                             <a id="cost-data-menu-link">Option 1</a>
                             <span class="icon-thumbnail">C</span>
                         </li>
@@ -62,32 +66,8 @@
                         <li class="d-none d-md-block">
                             <a id="forms-data-menu-link">Option 1</a>
                             <span class="icon-thumbnail">F</span>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a id="browse-inventory-menu-link" href="#">
-                        <span class="title">Rotations</span>
-                    </a>
-                    <span class="icon-thumbnail">
-                        <i class="fas fa-users"/>
-                    </span>
-                </li>
-                <li>
-                    <a id="browse-inventory-menu-link" href="#">
-                        <span class="title">Lead Owners</span>
-                    </a>
-                    <span class="icon-thumbnail">
-                        <i class="fas fa-users"/>
-                    </span>
-                </li>
-                <li>
-                    <a id="browse-inventory-menu-link" href="#">
-                        <span class="title">Agents</span>
-                    </a>
-                    <span class="icon-thumbnail">
-                        <i class="fas fa-users"/>
-                    </span>
+                        </li> -->
+                    </ul>
                 </li>
             </ul>
             <div class="clearfix"/>
@@ -180,7 +160,7 @@ export default {
         }
     }
 }
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li > a {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li > a {
     display: inline-block;
     padding: 5px 0px;
     font-size: 13px;
@@ -189,27 +169,27 @@ export default {
 }
 
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li > a,
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li > a {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li > a {
     font-family: 'Roboto', sans-serif;
 }
 
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li,
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li {
     padding: 10px 20px 0 40px;
 }
 
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li:hover,
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li:hover {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li:hover {
     background:rgba(0,165,222,.5);
 }
 
 .icon-thumbnail,
-.page-sidebar .sidebar-menu .menu-items>li ul.dealer-sub-menu>li .icon-thumbnail {
+.page-sidebar .sidebar-menu .menu-items>li ul.sub-menu>li .icon-thumbnail {
     background-color: transparent;
     color: #fff;
 }
 
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li .icon-thumbnail {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li .icon-thumbnail {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -218,18 +198,18 @@ export default {
 }
 
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu i,
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu i {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu i {
     color:rgba(255,255,255, .8);
     font-size: 16px !important;
 }
 
 .page-sidebar .sidebar-header,
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu,
-.page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu {
+.page-sidebar .sidebar-menu .menu-items > li ul.sub-menu {
     background-color:rgba(27,117,188,0);
     border-bottom: 1px solid var(--base-color); }
 
-    .page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu {
+    .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu {
         display: block !important;
         list-style: none;
         clear: both;
@@ -237,7 +217,7 @@ export default {
         padding: 18px 0 10px 0;
     }
 
-    .page-sidebar .sidebar-menu .menu-items>li ul.dealer-sub-menu>li {
+    .page-sidebar .sidebar-menu .menu-items>li ul.sub-menu>li {
         padding: 10px 20px 0 40px;
         background: none;
         margin-top: 1px;
@@ -245,7 +225,7 @@ export default {
 
     .icon-thumbnail,
     .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li .icon-thumbnail,
-    .page-sidebar .sidebar-menu .menu-items > li ul.dealer-sub-menu > li .icon-thumbnail {
+    .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li .icon-thumbnail {
         background-color:transparent;
         color: white;
     }
