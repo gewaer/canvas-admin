@@ -13,11 +13,13 @@ import VModal from "vue-js-modal";
 import VeeValidate from "vee-validate";
 import Vuetable from "vuetable-2";
 import "vue-multiselect/dist/vue-multiselect.min.css";
+import ToggleButton from 'vue-js-toggle-button';
 
 Vue.use(AbilitiesPlugin);
 Vue.use(Notifications);
 Vue.use(VeeValidate, { fieldsBagName: "formFields" });
 Vue.use(VModal);
+Vue.use(ToggleButton);
 
 Vue.component("multiselect", VueMultiselect);
 Vue.component("vuetable", Vuetable);

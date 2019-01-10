@@ -42,17 +42,19 @@
 
 <script>
 import generalInformation from "./general-information.vue";
+import aclRoles from "./acl-roles.vue";
 import subscriptions from "./subscriptions.vue";
 
 export default {
     name: "AppDetails",
     components: {
         generalInformation,
-        subscriptions
+        subscriptions,
+        aclRoles,
     },
     data() {
         return {
-            component: "generalInformation"
+            component: "aclRoles"
         };
     }
 }
