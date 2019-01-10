@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <component :is="component"></component>
+        <component :is="component"/>
     </div>
 </template>
 
@@ -48,11 +48,11 @@ export default {
     name: "AppDetails",
     components: {
         generalInformation,
-        subscriptions,
+        subscriptions
     },
     data() {
         return {
-            component: 'generalInformation'
+            component: "generalInformation"
         };
     }
 }

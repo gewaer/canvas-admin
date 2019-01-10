@@ -44,7 +44,7 @@
                         <span class="title">Apps</span>
                     </router-link>
                     <span class="icon-thumbnail">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt"/>
                     </span>
                     <ul v-if="$route.name === 'apps-details'" class="sub-menu">
                         <li>
