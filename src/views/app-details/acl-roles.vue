@@ -1,84 +1,89 @@
 <template>
-<div>
-    <h4 class="section-title p-l-10">ACL Roles list</h4>
-    <div class="card acl-roles">
-        <div class="card-block">
-            <div class="row">
-                <div class="col-3">
-                    <div class="roles__title">Roles</div>
-                    <ul class="roles__list">
-                        <li>
-                            <a href="#">Admins</a>
-                        </li>
-                        <li>
-                            <a href="#">Users</a>
-                        </li>
-                        <li class="selected">
-                            <a href="#">Agents</a>
-                            <div class="dropdown">
-                                <i class="fas fa-ellipsis-h dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">
-                                        <i class="fas fa-pencil-alt"></i> Rename
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="fas fa-trash-alt"></i> Delete
-                                    </a>
+    <div>
+        <h4 class="section-title p-l-10">ACL Roles list</h4>
+        <div class="card acl-roles">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="roles__title">Roles</div>
+                        <ul class="roles__list">
+                            <li>
+                                <a href="#">Admins</a>
+                            </li>
+                            <li>
+                                <a href="#">Users</a>
+                            </li>
+                            <li class="selected">
+                                <a href="#">Agents</a>
+                                <div class="dropdown">
+                                    <i 
+                                        id="dropdownMenuButton" 
+                                        class="fas fa-ellipsis-h dropdown-toggle" 
+                                        data-toggle="dropdown" 
+                                        aria-haspopup="true" 
+                                        aria-expanded="false"/>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-pencil-alt"/> Rename
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-trash-alt"/> Delete
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="add-role">
-                            <a href="#">
-                                <i class="fas fa-plus"></i> Add role
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-9">
-                    <div class="permissions__title">Permissions</div>
-                    <ul class="permissions__list">
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                        </li>
-                        <li>
-                            <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="add-role">
+                                <a href="#">
+                                    <i class="fas fa-plus"/> Add role
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div class="permissions__title">Permissions</div>
+                        <ul class="permissions__list">
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
+                            </li>
+                            <li>
+                                <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>
@@ -86,7 +91,7 @@ export default {
     data() {
         return {
             toggleButtonFalse: false,
-            toggleButtonTrue: true,
+            toggleButtonTrue: true
         };
     }
 }

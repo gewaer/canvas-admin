@@ -50,7 +50,7 @@ export default {
     components: {
         generalInformation,
         subscriptions,
-        aclRoles,
+        aclRoles
     },
     data() {
         return {
