@@ -41,44 +41,44 @@
                     </div>
                     <div class="col-12 col-md-9">
                         <div class="permissions__title">Permissions</div>
-                        <ul class="permissions__list">
-                            <li>
+                        <div class="permissions__list row">
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonFalse" /> Lorem ipsun dolor sit amet
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-12 col-lg-4">
                                 <toggle-button v-model="toggleButtonTrue" /> Lorem ipsun dolor sit amet
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

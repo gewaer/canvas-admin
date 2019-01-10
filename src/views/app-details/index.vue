@@ -43,18 +43,20 @@
 <script>
 import generalInformation from "./general-information.vue";
 import aclRoles from "./acl-roles.vue";
+import systemModules from "./system-modules.vue";
 import subscriptions from "./subscriptions.vue";
 
 export default {
     name: "AppDetails",
     components: {
         generalInformation,
-        subscriptions,
-        aclRoles
+        aclRoles,
+        systemModules,
+        subscriptions
     },
     data() {
         return {
-            component: "aclRoles"
+            component: "systemModules"
         };
     }
 }
