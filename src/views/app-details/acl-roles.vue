@@ -4,7 +4,7 @@
         <div class="card acl-roles">
             <div class="card-block">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <div class="roles__title">Roles</div>
                         <ul class="roles__list">
                             <li>
@@ -16,11 +16,11 @@
                             <li class="selected">
                                 <a href="#">Agents</a>
                                 <div class="dropdown">
-                                    <i 
-                                        id="dropdownMenuButton" 
-                                        class="fas fa-ellipsis-h dropdown-toggle" 
-                                        data-toggle="dropdown" 
-                                        aria-haspopup="true" 
+                                    <i
+                                        id="dropdownMenuButton"
+                                        class="fas fa-ellipsis-h dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
                                         aria-expanded="false"/>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="#">
@@ -39,7 +39,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-md-9">
                         <div class="permissions__title">Permissions</div>
                         <ul class="permissions__list">
                             <li>
