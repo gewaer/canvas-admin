@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <app-container>
         <h4 class="section-title p-l-10">ACL Roles list</h4>
         <div class="card acl-roles">
             <div class="card-block">
@@ -83,11 +83,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </app-container>
 </template>
 
 <script>
 export default {
+    name: "Roles",
+    components: {
+        AppContainer: () => import(/* webpackChunkName: "admin-app-container" */ "@v/app-details/index")
+    },
     data() {
         return {
             toggleButtonFalse: false,
