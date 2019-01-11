@@ -1,42 +1,42 @@
 <template>
-<div class="padding-20">
-    <div class="table-responsive">
-        <vuetable
-            ref="Vuetable"
-            :append-params="appendParams"
-            :fields="companiesFields"
-            :http-fetch="getTableData"
-            api-url="/companies"
-            class="table table-hover table-condensed"
-            pagination-path=""
-        >
-            <img
-                slot="profile_image"
-                slot-scope="props"
-                :src="props.rowData.profile_image || defaultImage"
-                height="25px"
+    <div class="padding-20">
+        <div class="table-responsive">
+            <vuetable
+                ref="Vuetable"
+                :append-params="appendParams"
+                :fields="companiesFields"
+                :http-fetch="getTableData"
+                api-url="/companies"
+                class="table table-hover table-condensed"
+                pagination-path=""
             >
-            <template slot="actions" slot-scope="props">
-                <button class="btn btn-primary m-l-5" @click="editCompany(props.rowData.id, false)"><i class="fa fa-eye" aria-hidden="true"/></button>
-                <button class="btn btn-complete m-l-5" @click="editCompany(props.rowData.id)"><i class="fa fa-edit" aria-hidden="true"/></button>
-                <button
-                    :disabled="isCurrentCompany(props.rowData.id)"
-                    class="btn btn-danger m-l-5"
-                    @click="beforeDeleteCompany(props.rowData)">
-                    <i class="fa fa-trash" aria-hidden="true" />
-                </button>
-            </template>
-        </vuetable>
-    </div>
+                <img
+                    slot="profile_image"
+                    slot-scope="props"
+                    :src="props.rowData.profile_image || defaultImage"
+                    height="25px"
+                >
+                <template slot="actions" slot-scope="props">
+                    <button class="btn btn-primary m-l-5" @click="editCompany(props.rowData.id, false)"><i class="fa fa-eye" aria-hidden="true"/></button>
+                    <button class="btn btn-complete m-l-5" @click="editCompany(props.rowData.id)"><i class="fa fa-edit" aria-hidden="true"/></button>
+                    <button
+                        :disabled="isCurrentCompany(props.rowData.id)"
+                        class="btn btn-danger m-l-5"
+                        @click="beforeDeleteCompany(props.rowData)">
+                        <i class="fa fa-trash" aria-hidden="true" />
+                    </button>
+                </template>
+            </vuetable>
+        </div>
 
-    <modal
-        :draggable="true"
-        :adaptive="true"
-        :scrollable="true"
-        name="company-modal"
-        height="auto"
-        @closed="selectedCompany = null"/>
-</div>
+        <modal
+            :draggable="true"
+            :adaptive="true"
+            :scrollable="true"
+            name="company-modal"
+            height="auto"
+            @closed="selectedCompany = null"/>
+    </div>
 </template>
 
 <script>

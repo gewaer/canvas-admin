@@ -1,24 +1,24 @@
 <template>
-<div>
-    <h4 class="section-title p-l-10">Companies </h4>
-    <div class="card acl-roles">
-        <div class="card-block">
-            <div class="row">
-                <div class="col">
-                    <transition name="fade" mode="out-in">
-                        <component
-                            :is="currentComponent"
-                            :company="selectedCompany"
-                            @getCompany="getCompany"
-                            @changeView="changeView"
-                            @companies="companies"
-                            @form-fields="setFormFields"/>
-                    </transition>
+    <div>
+        <h4 class="section-title p-l-10">Companies </h4>
+        <div class="card acl-roles">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col">
+                        <transition name="fade" mode="out-in">
+                            <component
+                                :is="currentComponent"
+                                :company="selectedCompany"
+                                @getCompany="getCompany"
+                                @changeView="changeView"
+                                @companies="companies"
+                                @form-fields="setFormFields"/>
+                        </transition>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>
@@ -30,7 +30,7 @@ export default {
     name: "SettingsCompaniesList",
     components: {
         CompaniesCRUD,
-        CompaniesList,
+        CompaniesList
     },
     mixins: [
         vueRouterMixins
