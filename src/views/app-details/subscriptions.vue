@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <app-container>
         <h4 class="section-title p-l-10">Subscriptions</h4>
         <div class="card subscriptions">
             <div class="card-block">
@@ -162,8 +162,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </app-container>
 </template>
+
+<script>
+export default {
+    name: "Subscriptions",
+    components: {
+        AppContainer: () => import(/* webpackChunkName: "admin-app-container" */ "@v/app-details/index")
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 .add-plan {

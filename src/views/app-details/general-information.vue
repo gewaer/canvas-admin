@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <app-container>
         <h4 class="section-title p-l-10">General setup</h4>
         <div class="card general-setup">
             <div class="card-block">
@@ -7,11 +7,11 @@
                     <div class="form-group row">
                         <label for="fname" class="col-md-3">Lipsum</label>
                         <div class="col-md-9">
-                            <input 
-                                id="fname" 
-                                type="text" 
-                                class="form-control" 
-                                name="name" 
+                            <input
+                                id="fname"
+                                type="text"
+                                class="form-control"
+                                name="name"
                                 required>
                         </div>
                     </div>
@@ -19,17 +19,17 @@
                         <label class="col-md-3">Lipsum</label>
                         <div class="col-md-9">
                             <div class="radio radio-success">
-                                <input 
-                                    id="male" 
-                                    type="radio" 
-                                    value="male" 
+                                <input
+                                    id="male"
+                                    type="radio"
+                                    value="male"
                                     name="optionyes">
                                 <label for="male">Lorem</label>
-                                <input 
-                                    id="female" 
-                                    type="radio" 
-                                    checked="checked" 
-                                    value="female" 
+                                <input
+                                    id="female"
+                                    type="radio"
+                                    checked="checked"
+                                    value="female"
                                     name="optionyes">
                                 <label for="female">Lorem</label>
                             </div>
@@ -53,10 +53,10 @@
                     <div class="form-group row">
                         <label for="position" class="col-md-3">Lipsum</label>
                         <div class="col-md-9">
-                            <input 
-                                id="position" 
-                                type="text" 
-                                class="form-control" 
+                            <input
+                                id="position"
+                                type="text"
+                                class="form-control"
                                 required>
                         </div>
                     </div>
@@ -75,5 +75,14 @@
                 </form>
             </div>
         </div>
-    </div>
+    </app-container>
 </template>
+
+<script>
+export default {
+    name: "Information",
+    components: {
+        AppContainer: () => import(/* webpackChunkName: "admin-app-container" */ "@v/app-details/index")
+    }
+}
+</script>

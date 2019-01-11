@@ -4,7 +4,6 @@ import Dashboard from "./views/dashboard";
 import Auth from "@/views/users/auth";
 import store from "@/store";
 import BrowseAppsList from "./views/apps-browse/";
-import AppDetails from "./views/app-details/";
 
 Vue.use(Router);
 
@@ -76,10 +75,51 @@ const router = new Router({
                 requiresAuth: true
             }
         },
+        // ===== Admin App Details =====
         {
-            path: "/app/:id/details",
-            name: "app-details",
-            component: AppDetails,
+            path: "/app/:id/info",
+            name: "adminAppInfo",
+            component: () => import(/* webpackChunkName: "admin-app-info" */ "./views/app-details/general-information"),
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/roles",
+            name: "adminAppRoles",
+            component: () => import(/* webpackChunkName: "admin-app-roles" */ "./views/app-details/acl-roles"),
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/subscriptions",
+            name: "adminAppSubscriptions",
+            component: () => import(/* webpackChunkName: "admin-app-subscriptions" */ "./views/app-details/subscriptions"),
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/modules",
+            name: "adminAppModules",
+            component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/system-modules"),
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/companies",
+            name: "adminAppCompaniesList",
+            component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/manager/list"),
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: "/app/:id/companies/edit",
+            name: "adminAppCompaniesEdit",
+            component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/manager/form"),
             meta: {
                 requiresAuth: true
             }
