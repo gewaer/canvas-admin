@@ -46,27 +46,27 @@
                     <span class="icon-thumbnail">
                         <i class="fas fa-mobile-alt"/>
                     </span>
-                    <ul v-if="$route.name === 'apps-details'" class="sub-menu">
+                    <ul v-if="$route.meta.group === 'appDetails'" class="sub-menu">
                         <li>
-                            <router-link :to="{ name: 'apps-browse'}">General Information</router-link>
+                            <router-link :to="{ name: 'adminAppInfo'}">General Information</router-link>
                             <span class="icon-thumbnail">G</span>
                         </li>
                         <li>
-                            <router-link :to="{ name: 'apps-browse'}">Subscriptions</router-link>
-                            <span class="icon-thumbnail">S</span>
-                        </li>
-                        <!-- <li>
-                            <a id="cost-data-menu-link">Option 1</a>
-                            <span class="icon-thumbnail">C</span>
+                            <router-link :to="{ name: 'adminAppRoles'}">Roles</router-link>
+                            <span class="icon-thumbnail">R</span>
                         </li>
                         <li>
-                            <a id="pricing-data-menu-link">Option 1</a>
-                            <span class="icon-thumbnail">P</span>
+                            <router-link :to="{ name: 'adminAppSubscriptions'}">Subscriptions</router-link>
+                            <span class="icon-thumbnail">S</span>
                         </li>
-                        <li class="d-none d-md-block">
-                            <a id="forms-data-menu-link">Option 1</a>
-                            <span class="icon-thumbnail">F</span>
-                        </li> -->
+                        <li>
+                            <router-link :to="{ name: 'adminAppModules'}">Modules</router-link>
+                            <span class="icon-thumbnail">M</span>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'adminAppCompaniesList'}">Companies</router-link>
+                            <span class="icon-thumbnail">C</span>
+                        </li>
                     </ul>
                 </li>
             </ul>

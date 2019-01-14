@@ -1,48 +1,101 @@
 <template>
     <app-container>
-        <div class="row">
-            <div class="col">
-                <h5>
-                    Companies
-                </h5>
-                <div class="table-responsive">
-                    <vuetable
-                        ref="Vuetable"
-                        :append-params="appendParams"
-                        :fields="companiesFields"
-                        :http-fetch="getTableData"
-                        api-url="/companies"
-                        class="table table-hover table-condensed"
-                        pagination-path=""
-                    >
-                        <img
-                            slot="profile_image"
-                            slot-scope="props"
-                            :src="props.rowData.profile_image || defaultImage"
-                            height="25px"
-                        >
-                        <template slot="actions" slot-scope="props">
-                            <button class="btn btn-primary m-l-5" @click="editCompany(props.rowData.id, false)"><i class="fa fa-eye" aria-hidden="true"/></button>
-                            <button class="btn btn-complete m-l-5" @click="editCompany(props.rowData.id)"><i class="fa fa-edit" aria-hidden="true"/></button>
-                            <button
-                                :disabled="isCurrentCompany(props.rowData.id)"
-                                class="btn btn-danger m-l-5"
-                                @click="beforeDeleteCompany(props.rowData)">
-                                <i class="fa fa-trash" aria-hidden="true" />
+        <h4 class="section-title p-l-10">Companies</h4>
+        <div class="card">
+            <div class="card-block">
+                <div class="browse-filters">
+                    <div class="dropdown bulk-actions">
+                        <button
+                            id="bulk-actions"
+                            class="btn btn-info dropdown-toggle"
+                            type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            Bulk actions
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="bulk-actions">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="input-group search-bar">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary">
+                                <i class="fa fa-search"/> Search
                             </button>
-                        </template>
-                    </vuetable>
+                        </div>
+                    </div>
+                    <div class="browse-list-filters d-flex align-items-center">
+                        <span class="mr-3">Filters</span>
+                        <!-- <select id="multi" class="full-width" data-init-plugin="select2" multiple>
+                            <option value="1">Filter 1</option>
+                            <option value="2">Filter 2</option>
+                            <option value="3">Filter 3</option>
+                            <option class="add-custom-filter" @click.stop="addCustomFilter">Add custom filter</option>
+                        </select> -->
+                        <multiselect
+                            v-model="currentFilters"
+                            :multiple="true"
+                            :show-labels="false"
+                            :options="['Filter 1', 'Filter 2', 'Fiilter 3']"
+                        >
+                            <template slot="afterList" >
+                                <div class="add-custom-filter-btn option__desc"><a class="option__title" @click="showAddCustomFilter">
+                                <i class="fa fa-plus"/> Add custom Filter</a>
+                                </div>
+                            </template>
+                        </multiselect>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="card companies-list">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <vuetable
+                                ref="Vuetable"
+                                :append-params="appendParams"
+                                :fields="companiesFields"
+                                :http-fetch="getTableData"
+                                api-url="/companies"
+                                class="table table-hover table-condensed p-t-0"
+                                pagination-path=""
+                            >
+                                <img
+                                    slot="profile_image"
+                                    slot-scope="props"
+                                    :src="props.rowData.profile_image || defaultImage"
+                                    height="25px"
+                                >
+                                <template slot="actions" slot-scope="props">
+                                    <button class="btn btn-primary m-l-5" @click="editCompany(props.rowData.id, false)"><i class="fa fa-eye" aria-hidden="true"/></button>
+                                    <button class="btn btn-complete m-l-5" @click="editCompany(props.rowData.id)"><i class="fa fa-edit" aria-hidden="true"/></button>
+                                    <button
+                                        :disabled="isCurrentCompany(props.rowData.id)"
+                                        class="btn btn-danger m-l-5"
+                                        @click="beforeDeleteCompany(props.rowData)">
+                                        <i class="fa fa-trash" aria-hidden="true" />
+                                    </button>
+                                </template>
+                            </vuetable>
+                        </div>
+                    </div>
 
-            <modal
-                :draggable="true"
-                :adaptive="true"
-                :scrollable="true"
-                name="company-modal"
-                height="auto"
-                @closed="selectedCompany = null"
-            />
+                    <modal
+                        :draggable="true"
+                        :adaptive="true"
+                        :scrollable="true"
+                        name="company-modal"
+                        height="auto"
+                        @closed="selectedCompany = null"
+                    />
+                </div>
+            </div>
         </div>
     </app-container>
 </template>

@@ -81,6 +81,7 @@ const router = new Router({
             name: "adminAppInfo",
             component: () => import(/* webpackChunkName: "admin-app-info" */ "./views/app-details/general-information"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         },
@@ -89,6 +90,7 @@ const router = new Router({
             name: "adminAppRoles",
             component: () => import(/* webpackChunkName: "admin-app-roles" */ "./views/app-details/acl-roles"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         },
@@ -97,6 +99,7 @@ const router = new Router({
             name: "adminAppSubscriptions",
             component: () => import(/* webpackChunkName: "admin-app-subscriptions" */ "./views/app-details/subscriptions"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         },
@@ -105,6 +108,7 @@ const router = new Router({
             name: "adminAppModules",
             component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/system-modules"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         },
@@ -113,6 +117,7 @@ const router = new Router({
             name: "adminAppCompaniesList",
             component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/manager/list"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         },
@@ -121,6 +126,7 @@ const router = new Router({
             name: "adminAppCompaniesEdit",
             component: () => import(/* webpackChunkName: "admin-app-modules" */ "./views/app-details/manager/form"),
             meta: {
+                group: "appDetails",
                 requiresAuth: true
             }
         }

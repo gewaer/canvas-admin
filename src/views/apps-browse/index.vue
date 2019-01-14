@@ -11,7 +11,7 @@
         <h4 class="section-title p-l-10">Apps list</h4>
         <div class="card">
             <div class="card-block">
-                <div class="browse-list-row">
+                <div class="browse-filters">
                     <div class="dropdown bulk-actions">
                         <button
                             id="bulk-actions"
@@ -102,11 +102,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -135,11 +135,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -168,11 +168,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -201,11 +201,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -234,11 +234,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -267,11 +267,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -300,11 +300,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -333,11 +333,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -366,11 +366,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -399,11 +399,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -432,11 +432,11 @@
                                 <td>
                                     <div class="btn-group app-edit-btn">
                                         <button type="button" class="btn btn-secondary"><i class="fas fa-pencil-alt"/> Edit</button>
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split" 
-                                            data-toggle="dropdown" 
-                                            aria-haspopup="true" 
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
                                             aria-expanded="false">
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
@@ -479,38 +479,38 @@ export default {
 
 
 <style lang="scss">
-.browse-list {
-    .browse-list-row {
-        display: flex;
-        align-items: center;
-        padding: 8px;
+.browse-filters {
+    display: flex;
+    align-items: center;
+    padding: 8px;
 
-        .bulk-actions {
-            padding-left: 5px;
-            padding-right: 15px;
+    .bulk-actions {
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .search-bar {
+        margin-left: 25px;
+        max-width: 320px;
+    }
+
+    .browse-list-filters {
+        margin-left: auto;
+        max-width: 450px;
+
+        .multiselect__tags {
+            min-width: 280px;
         }
 
-        .search-bar {
-            margin-left: 25px;
-            max-width: 320px;
-        }
-
-        .browse-list-filters {
-            margin-left: auto;
-            max-width: 450px;
-
-            .multiselect__tags {
-                min-width: 280px;
-            }
-
-            .add-custom-filter-btn {
-                background-color: var(--base-color);
-                color: white;
-                padding: 5px;
-                cursor: pointer;
-            }
+        .add-custom-filter-btn {
+            background-color: var(--base-color);
+            color: white;
+            padding: 5px;
+            cursor: pointer;
         }
     }
+}
+.browse-list {
 
     table {
         table-layout: initial !important;
